@@ -31,7 +31,7 @@ public class CarTest {
 
     @Test
     void move_test() {
-        int distance = car.move(5);
-        assertThat(distance).isEqualTo(1);
+        String distance = car.move(5);
+        assertThat(distance.equals("-")).isTrue();
     }
 }
