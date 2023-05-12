@@ -6,18 +6,22 @@
 * 전진하는 조건은 0에서 9 사이에서 random 값을 구한 후 random 값이 4이상일 경우이다.
 * 자동차 경주 게임을 완료한 후 누가 우승했는지를 알려준다. 우승자는 한명 이상일 수 있다.
 
-### Todo
-* Racing
-    * 게임 실행 담당 class
-        * 자동차 이름들 및 시도 회수 입력 받음
-        * UI 로직 수행
-            * InputView
-            * ResultView
-* Car
-    * carName, distance
-    * move() - 전진 조건에 해당 시 distance를 1 증가시킴
-* Cars
-    * repeatNo
+### Keep in mind
+* [자동차경주 게임 피드백 pdf](https://nextstep-storage.s3.ap-northeast-2.amazonaws.com/2020-04-13T14%3A18%3A53.571%E1%84%8C%E1%85%A1%E1%84%83%E1%85%A9%E1%86%BC%E1%84%8E%E1%85%A1%20%E1%84%80%E1%85%A7%E1%86%BC%E1%84%8C%E1%85%AE%20%E1%84%80%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%B7%20%E1%84%91%E1%85%B5%E1%84%83%E1%85%B3%E1%84%87%E1%85%A2%E1%86%A8.pdf)
+
+
+### 피드백 반영 Todo
+* class diagram 작성하기
+* MVC pattern으로 구현해보기
+* 경계값을 넣어 테스트하기
+* Strategy pattern 적용해보기 with @FunctionalInterface -> DI 가능케 함 -> Testable & 변경에 유현한 코드 작성
+* getter를 안쓰고 대신 class를 비교해보기 Override equals
+    * 값을 view에 전달해야 하는 최종 단계에서만 getter 쓰기
+* Immutable object vs Mutable object. 처음부터 성능을 고려하지는 말고 우선 Immutable하게 만들어보기.
+* View에서 사용할 데이터는 getter 사용 가능
+* Testable한 객체를 만들기 위해 다양한 형태의 생성자를 만들기
+
+<img src="./java-racing-car Diagram.draw.io.drawio.svg" style="width:80%">
 
 ## [NEXTSTEP 플레이그라운드의 미션 진행 과정](https://github.com/next-step/nextstep-docs/blob/master/playground/README.md)
 
